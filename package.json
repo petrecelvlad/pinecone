@@ -1,0 +1,12 @@
+{
+  "name": "cone-lite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Universal documentation framework for AI-assisted software development",
+  "scripts": {
+    "docs:atlas": "echo 'TODO: Implement atlas generator — auto-generate a library index from the cone/ tree. Walk all .md files, extract @propolis metadata and first heading, output to cone/ATLAS.md'",
+    "docs:audit": "echo 'TODO: Implement documentation auditor — verify all .md files have @propolis blocks, check for broken internal links, report orphaned files not referenced by any other document'",
+    "graph:sync": "echo 'TODO: Implement graph generator — parse @propolis blocks from all source files, extract role and dependency edges, output a dependency graph summary to cone/GRAPH_SPINE.md'",
+    "graph:slice": "echo 'TODO: Implement graph slicer — given a node name as argument, output its 1-hop subgraph (direct dependents and dependencies) as markdown'"
+  }
+}
