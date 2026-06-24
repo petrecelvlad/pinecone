@@ -41,6 +41,8 @@ This framework applies the Single Responsibility Principle to documentation. Eac
 
 Reading them out of order means reading a document that references concepts you haven't encountered yet. Reading them in order means each document clicks into place.
 
+**Note:** All documents in `cone/` use OKF (Open Knowledge Format) YAML frontmatter. See the OKF section in your companion file for details on required fields and cone-specific extensions.
+
 ---
 
 ## Phase 1: Rules (How I Operate)

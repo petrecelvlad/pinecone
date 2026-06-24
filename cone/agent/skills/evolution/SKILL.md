@@ -132,11 +132,6 @@ Create a new proposal file in `cone/evolution/`:
 - `impact` — `HIGH` | `MEDIUM` | `LOW`
 - `affected_pillar` — `agent` | `project` | `both`
 
-**Notes
-
-[Any additional context, caveats, or dependencies between findings]
-```
-
 ---
 
 ## Step 4 — Present to the User

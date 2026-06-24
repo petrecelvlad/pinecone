@@ -132,27 +132,36 @@ Use these standard roles. Add project-specific roles as needed.
  */
 ```
 
-### A markdown document
+### A markdown document in cone/
+
+Markdown files in the `cone/` bundle do **not** use @propolis. They use OKF YAML frontmatter instead:
+
 ```markdown
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Defines naming conventions for all source files"],
- *   "agent_instructions": "This is a reference document. Do not modify without updating all existing files that follow this convention."
- * }
- */
+---
+type: Protocol
+title: Document Title
+description: One-line summary.
+tags: [relevant, tags]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Key constraint
+agent_instructions: >
+  Guidance for agents modifying this file.
+---
 ```
+
+See [OKF_ADAPTATION.md](../../evolution/OKF/OKF_ADAPTATION.md) for the full design.
 
 ---
 
 ## When to Add Propolis
 
 **Always add to:**
-- Every new source file you create
-- Every existing file you modify (if it doesn't have one yet)
+- Every new source **code** file you create
+- Every existing code file you modify (if it doesn't have one yet)
 
 **Skip for:**
+- Markdown files in `cone/` — these use OKF YAML frontmatter
 - Generated files (build output, lock files, compiled assets)
 - Configuration files that don't support comments (JSON, `.env`)
 - Third-party files you don't own

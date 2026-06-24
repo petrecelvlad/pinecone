@@ -76,17 +76,19 @@ I recognize that `AGENT.md` contains provider-agnostic rules only. I look for on
 
 ## 1. ARCHITECTURAL GUARDRAILS
 
-<!-- CUSTOMIZE: Replace this section with your project's specific constraints. Examples: -->
+> **Template placeholder.** When cone-lite is adopted by a project, replace this section with the project's non-negotiable architectural constraints.
+
+<!-- CUSTOMIZE: Replace with your project's specific constraints. Examples: -->
 <!-- - Package isolation rules (which packages can import which) -->
 <!-- - Performance constraints (CPU budgets, memory limits, latency targets) -->
 <!-- - Platform constraints (serverless, edge, mobile) -->
 <!-- - Build order requirements -->
 
-*Define your project's non-negotiable architectural boundaries here.*
-
 ---
 
 ## 2. TECH STACK
+
+> **Template placeholder.** When cone-lite is adopted by a project, replace this section with the project's actual technology choices.
 
 <!-- CUSTOMIZE: Replace with your project's actual tech stack. Example format: -->
 <!-- - **Language:** TypeScript 5.x (Strict Mode) -->
@@ -94,13 +96,11 @@ I recognize that `AGENT.md` contains provider-agnostic rules only. I look for on
 <!-- - **Database:** [Your database] -->
 <!-- - **Hosting:** [Your platform] -->
 
-*Define your project's technology choices here.*
-
 ---
 
-## 3. PROPOLIS PROTOCOL
+## 3. METADATA PROTOCOL
 
-I treat this codebase as a living system. I ensure every source file I create or modify begins with a `@propolis` metadata block. See `cone/agent/onboarding/PROPOLIS.md` for the full specification.
+I treat this codebase as a living system. **Code files** begin with a `@propolis` metadata block. **Markdown files** in `cone/` use OKF YAML frontmatter (type, title, description, tags, timestamp, plus cone extensions). See `cone/agent/onboarding/PROPOLIS.md` for the full specification.
 
 ```typescript
 /**
