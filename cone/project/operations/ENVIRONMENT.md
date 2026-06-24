@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Never include actual secret values — document structure only"],
- *   "agent_instructions": "Environment configuration reference. Documents what environment variables exist, where they come from, and what they do. NEVER include actual secret values in this file — only structure, descriptions, and dummy examples."
- * }
- */
+---
+type: Protocol
+title: Environment & Configuration
+description: Environment variable reference — structure and descriptions only, never actual secrets.
+tags: [operations, environment, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Never include actual secret values — document structure only
+agent_instructions: >
+  Environment configuration reference. Documents what environment variables exist, where they
+  come from, and what they do. NEVER include actual secret values in this file — only structure,
+  descriptions, and dummy examples.
+---
 
 # Environment & Configuration
 
@@ -53,4 +58,4 @@
 <!-- - "SQLite on D1 doesn't support ALTER COLUMN" -->
 <!-- - "Windows fails to release port 8787 after stopping wrangler — kill the process manually" -->
 
-*Document platform-specific gotchas here. Move recurring ones to `cone/project/memory/PLAYBOOK.md`.*
+*Document platform-specific gotchas here. Move recurring ones to [PLAYBOOK.md](../memory/PLAYBOOK.md).*

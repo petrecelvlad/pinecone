@@ -1,22 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PERSONA",
- *   "constraints": ["Read before writing any new persona"],
- *   "agent_instructions": "Meta-persona: defines the format, writing rules, and distinction between personas and skills. Read this before creating any new persona file."
- * }
- */
-
 ---
-name: persona-creator
-archetype: Meta — Persona Definition
+type: Persona
+title: "Persona Creator: How I Define My Roles"
 description: >
-  My template and rules for creating personas. I define the mental model,
-  thinking patterns, and behavioral heuristics I adopt when operating in a specific role.
-  This is not a task procedure — it is my role definition.
-
-  Trigger when: "create a persona", "build a persona for", "define a [role] mental model",
-  "we need a persona for", "add [archetype] to the personas library".
+  Meta-persona for creating new personas — defines the format, writing rules,
+  and distinction between personas and skills.
+tags: [persona, meta, agent]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Read before writing any new persona
+agent_instructions: >
+  Meta-persona: defines the format, writing rules, and distinction between personas and skills.
+  Read this before creating any new persona file.
 ---
 
 # Persona Creator: How I Define My Roles
@@ -114,7 +108,7 @@ Quick, actionable decision rules in "When X, do Y" format. The operationalized f
 | On-demand | Applies to specific task types | Reference in the relevant skill's preamble |
 | Explicit invoke | Activated by user request | Document trigger phrases in frontmatter |
 
-After creating a persona, add an entry to `cone/agent/personas/README.md`.
+After creating a persona, add an entry to [README.md](./README.md).
 
 ---
 

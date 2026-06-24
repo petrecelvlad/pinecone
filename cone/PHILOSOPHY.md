@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Foundational document — changes here affect the entire framework"],
- *   "agent_instructions": "The framework's philosophy and evolution principles. Read during onboarding (Phase 1, Step 2). This document defines WHAT this system is and WHY it exists. It does not define HOW to use it — that's in the onboarding docs."
- * }
- */
+---
+type: Protocol
+title: cone-lite Philosophy
+description: The framework's philosophy and evolution principles — WHAT this system is and WHY it exists.
+tags: [philosophy, foundational]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Foundational document — changes here affect the entire framework
+agent_instructions: >
+  Read during onboarding (Phase 1, Step 2). This document defines WHAT this system is
+  and WHY it exists. It does not define HOW to use it — that's in the onboarding docs.
+---
 
 # cone-lite Philosophy
 
@@ -92,7 +96,7 @@ Session files serve two masters simultaneously: they are a live workspace during
 
 ### 6. Self-Evolution
 
-The framework includes a mechanism for its own improvement. The evolution skill (`cone/agent/skills/evolution/`) enables any agent to propose improvements to the framework itself — new personas, new skills, structural changes, missing documentation patterns.
+The framework includes a mechanism for its own improvement. The [evolution skill](./agent/skills/evolution/SKILL.md) enables any agent to propose improvements to the framework itself — new personas, new skills, structural changes, missing documentation patterns.
 
 A framework that cannot evolve becomes a constraint. A framework that evolves with its users becomes an asset.
 
@@ -113,7 +117,7 @@ The framework evolves through three mechanisms:
 
 1. **Organic growth** — As the project develops, new documents are added to address emerging needs. A new subsystem gets an architecture doc. A recurring mistake gets an anti-pattern entry. A complex workflow gets a skill.
 
-2. **Evolution proposals** — The evolution skill (`cone/agent/skills/evolution/SKILL.md`) enables structured improvement proposals. Any agent can audit the framework and propose changes: missing documentation, structural improvements, new personas or skills, process gaps.
+2. **Evolution proposals** — The [evolution skill](./agent/skills/evolution/SKILL.md) enables structured improvement proposals. Any agent can audit the framework and propose changes: missing documentation, structural improvements, new personas or skills, process gaps.
 
 3. **Session feedback** — Each session is an opportunity to notice what's working and what isn't. If an agent consistently can't find what it needs, that's a signal the framework needs to grow. If an agent reads a document that doesn't help, that's a signal the document needs to change.
 

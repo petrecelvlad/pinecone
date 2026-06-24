@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Governs all session file creation and lifecycle"],
- *   "agent_instructions": "The session protocol. Read before creating any session file. Sessions serve dual purpose: live tracking during work AND permanent archive after. Never delete session files."
- * }
- */
+---
+type: Protocol
+title: Session Protocol
+description: Governs session file creation and lifecycle — live tracking during work, permanent archive after.
+tags: [onboarding, sessions, agent]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Governs all session file creation and lifecycle
+agent_instructions: >
+  The session protocol. Read before creating any session file. Sessions serve dual purpose:
+  live tracking during work AND permanent archive after. Never delete session files.
+---
 
 # Session Protocol
 

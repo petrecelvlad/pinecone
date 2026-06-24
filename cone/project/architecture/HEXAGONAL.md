@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Reference document — not prescriptive for all projects"],
- *   "agent_instructions": "Hexagonal Architecture reference guide. Recommended for non-trivial projects with external dependencies. Read when designing system structure or evaluating architectural decisions."
- * }
- */
+---
+type: Reference
+title: Hexagonal Architecture Reference
+description: Hexagonal Architecture (Ports and Adapters) reference guide for non-trivial projects.
+tags: [architecture, reference, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Reference document — not prescriptive for all projects
+agent_instructions: >
+  Hexagonal Architecture reference guide. Recommended for non-trivial projects with external
+  dependencies. Read when designing system structure or evaluating architectural decisions.
+---
 
 # Hexagonal Architecture Reference
 
@@ -165,4 +169,4 @@ If you need a type in both Core and Adapters, it belongs in a shared contract/ty
 
 ## Further Reading
 
-For project-specific architectural documentation, see `cone/project/architecture/OVERVIEW.md` and per-system docs in `cone/project/architecture/systems/`.
+For project-specific architectural documentation, see [OVERVIEW.md](./OVERVIEW.md) and per-system docs in [systems/](./systems/TEMPLATE.md).

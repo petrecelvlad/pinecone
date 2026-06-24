@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "BOOTLOADER",
- *   "constraints": ["Must be read before any other cone/ document"],
- *   "agent_instructions": "This is the framework entry point. Follow the phased onboarding sequence exactly. Each phase gives you a specific capability — do not skip ahead."
- * }
- */
+---
+type: Bootloader
+title: "Start Here: Onboarding Sequence"
+description: Framework entry point — the phased onboarding sequence agents follow on first load.
+tags: [onboarding, agent]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Must be read before any other cone/ document
+agent_instructions: >
+  This is the framework entry point. Follow the phased onboarding sequence exactly.
+  Each phase gives you a specific capability — do not skip ahead.
+---
 
 # Start Here: Onboarding Sequence
 
@@ -46,9 +50,9 @@ Reading them out of order means reading a document that references concepts you 
 | Step | Document | What I gain |
 |---|---|---|
 | 1 | `AGENT.md` | My constitution: phases, guardrails, standing rules |
-| 2 | `cone/PHILOSOPHY.md` | Framework purpose, principles, and evolution model |
+| 2 | [PHILOSOPHY.md](../../PHILOSOPHY.md) | Framework purpose, principles, and evolution model |
 | 3 | `CLAUDE.md` (or provider companion) | My onboarding sequence, session protocol, memory rules |
-| 4 | `cone/agent/onboarding/CODING_COMPANION.md` | My coding discipline: naming, functions, errors, types |
+| 4 | [CODING_COMPANION.md](./CODING_COMPANION.md) | My coding discipline: naming, functions, errors, types |
 
 After Phase 1, I can operate safely on any task. I know the rules, the constraints, and how to write code that meets the project's standards.
 
@@ -60,8 +64,8 @@ After Phase 1, I can operate safely on any task. I know the rules, the constrain
 
 | Step | Document | What I gain |
 |---|---|---|
-| 5 | `cone/project/architecture/OVERVIEW.md` | System design, key decisions, component structure |
-| 6 | `cone/project/architecture/systems/*.md` | Deep-dive into specific subsystems (read as needed) |
+| 5 | [OVERVIEW.md](../../project/architecture/OVERVIEW.md) | System design, key decisions, component structure |
+| 6 | [systems/*.md](../../project/architecture/systems/TEMPLATE.md) | Deep-dive into specific subsystems (read as needed) |
 | 7 | `GRAPH_SPINE.md` (when available) | Dependency graph, god nodes, blast radius awareness |
 
 After Phase 2, I understand what was built and why. I can assess blast radius before making changes and navigate the codebase with context.
@@ -74,8 +78,8 @@ After Phase 2, I understand what was built and why. I can assess blast radius be
 
 | Step | Document | What I gain |
 |---|---|---|
-| 8 | `cone/agent/personas/COMMUNICATOR.md` | Information density, response calibration (always-active) |
-| 9 | `cone/agent/personas/DEVELOPER.md` | Coding mental model (activate if coding this session) |
+| 8 | [COMMUNICATOR.md](../personas/COMMUNICATOR.md) | Information density, response calibration (always-active) |
+| 9 | [DEVELOPER.md](../personas/DEVELOPER.md) | Coding mental model (activate if coding this session) |
 | 10 | Other personas as needed | Task-specific mental models |
 
 After Phase 3, I'm fully onboarded. I have rules, territory, and identity. I can begin work.
@@ -88,23 +92,23 @@ These documents are consulted during work, not during onboarding:
 
 | When I need to... | I read... |
 |---|---|
-| Create or manage a session file | `cone/agent/onboarding/SESSIONS.md` |
-| Add file metadata | `cone/agent/onboarding/PROPOLIS.md` |
-| Understand hex architecture | `cone/project/architecture/HEXAGONAL.md` |
-| Check architectural constraints | `cone/project/architecture/GUARDRAILS.md` |
-| Document a subsystem | `cone/project/architecture/systems/TEMPLATE.md` |
+| Create or manage a session file | [SESSIONS.md](./SESSIONS.md) |
+| Add file metadata | [PROPOLIS.md](./PROPOLIS.md) |
+| Understand hex architecture | [HEXAGONAL.md](../../project/architecture/HEXAGONAL.md) |
+| Check architectural constraints | [GUARDRAILS.md](../../project/architecture/GUARDRAILS.md) |
+| Document a subsystem | [systems/TEMPLATE.md](../../project/architecture/systems/TEMPLATE.md) |
 | Write a technical spec | `cone/project/specs/` |
-| Propose a project feature/change | `cone/project/specs/proposals/TEMPLATE.md` |
-| Set up local dev environment | `cone/project/operations/SETUP.md` |
-| Understand deployment | `cone/project/operations/DEPLOYMENT.md` |
-| Check env vars or platform quirks | `cone/project/operations/ENVIRONMENT.md` |
-| Check known failure modes | `cone/project/memory/PLAYBOOK.md` |
-| Check anti-patterns | `cone/project/memory/ANTI_PATTERNS.md` |
-| Check confirmed practices | `cone/project/memory/LESSONS.md` |
-| Make an architectural decision | `cone/project/archive/decisions/TEMPLATE.md` |
-| Create a new persona | `cone/agent/personas/PERSONA_CREATOR.md` |
-| Create a new skill | `cone/agent/skills/skill-creator/SKILL.md` |
-| Propose framework improvements | `cone/agent/skills/evolution/SKILL.md` |
+| Propose a project feature/change | [proposals/TEMPLATE.md](../../project/specs/proposals/TEMPLATE.md) |
+| Set up local dev environment | [SETUP.md](../../project/operations/SETUP.md) |
+| Understand deployment | [DEPLOYMENT.md](../../project/operations/DEPLOYMENT.md) |
+| Check env vars or platform quirks | [ENVIRONMENT.md](../../project/operations/ENVIRONMENT.md) |
+| Check known failure modes | [PLAYBOOK.md](../../project/memory/PLAYBOOK.md) |
+| Check anti-patterns | [ANTI_PATTERNS.md](../../project/memory/ANTI_PATTERNS.md) |
+| Check confirmed practices | [LESSONS.md](../../project/memory/LESSONS.md) |
+| Make an architectural decision | [decisions/TEMPLATE.md](../../project/archive/decisions/TEMPLATE.md) |
+| Create a new persona | [PERSONA_CREATOR.md](../personas/PERSONA_CREATOR.md) |
+| Create a new skill | [skill-creator/SKILL.md](../skills/skill-creator/SKILL.md) |
+| Propose framework improvements | [evolution/SKILL.md](../skills/evolution/SKILL.md) |
 
 ---
 
@@ -114,4 +118,4 @@ Before creating a new session file, check `cone/agent/sessions/` for any file wi
 - `IN-PROGRESS` → continue from it. Do not create a new file.
 - `HANDOFF` → read the handoff section to understand remaining work, then create a new session file.
 
-See `cone/agent/onboarding/SESSIONS.md` for the full session protocol.
+See [SESSIONS.md](./SESSIONS.md) for the full session protocol.

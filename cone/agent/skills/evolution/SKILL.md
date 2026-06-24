@@ -1,23 +1,15 @@
 ---
-name: evolution
+type: Skill
+title: "Evolution: Framework Self-Improvement"
 description: >
-  Audit the cone-lite framework and propose improvements. Use when the documentation
-  system feels incomplete, when patterns are missing, when onboarding could be smoother,
-  or when the project has outgrown the current framework structure. Produces numbered
-  proposal files in cone/evolution/.
-
-  Trigger when: "improve the framework", "audit the docs", "what's missing from cone",
-  "propose framework improvements", "evolve the documentation", "the framework needs updating",
-  "run an evolution pass", "what should we document next".
+  Audit the cone-lite framework and propose improvements. Produces proposal files
+  in cone/evolution/.
+tags: [skill, meta, evolution]
+timestamp: 2026-06-23T00:00:00Z
+agent_instructions: >
+  Meta-skill for framework self-improvement. Generates numbered proposals in cone/evolution/.
+  Read the full skill before running — the audit categories and proposal format are specific.
 ---
-
-/**
- * @propolis
- * {
- *   "role": "SKILL",
- *   "agent_instructions": "Meta-skill for framework self-improvement. Generates numbered proposals in cone/evolution/. Read the full skill before running — the audit categories and proposal format are specific."
- * }
- */
 
 # Evolution: Framework Self-Improvement
 
@@ -61,11 +53,11 @@ Perform a systematic audit across these categories. For each, ask the guiding qu
 
 *Is everything that should be documented actually documented?*
 
-- Are there major systems or components without architecture docs in `cone/project/architecture/systems/`?
+- Are there major systems or components without architecture docs in [systems/](../../project/architecture/systems/TEMPLATE.md)?
 - Are there repeated decisions being made that should be an ADR?
-- Are there recurring debugging patterns not captured in `cone/project/memory/PLAYBOOK.md`?
-- Are there known pitfalls not in `cone/project/memory/ANTI_PATTERNS.md`?
-- Are there confirmed practices not in `cone/project/memory/LESSONS.md`?
+- Are there recurring debugging patterns not captured in [PLAYBOOK.md](../../project/memory/PLAYBOOK.md)?
+- Are there known pitfalls not in [ANTI_PATTERNS.md](../../project/memory/ANTI_PATTERNS.md)?
+- Are there confirmed practices not in [LESSONS.md](../../project/memory/LESSONS.md)?
 
 ### C. Agent Workflow Gaps
 

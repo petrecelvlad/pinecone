@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "CONSTRAINT_REGISTRY",
- *   "constraints": ["Single source of truth for all architectural constraints"],
- *   "agent_instructions": "Central constraint registry. When a @propolis block references a constraint ID (e.g., C-001), this is where the full definition lives. Add new constraints with the next available ID. Never remove a constraint — deprecate it."
- * }
- */
+---
+type: Constraint Registry
+title: "Guardrails: Constraint Registry"
+description: Single source of truth for all architectural constraints, referenced by ID.
+tags: [architecture, constraints, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Single source of truth for all architectural constraints
+agent_instructions: >
+  Central constraint registry. When a @propolis block references a constraint ID (e.g., C-001),
+  this is where the full definition lives. Add new constraints with the next available ID.
+  Never remove a constraint — deprecate it.
+---
 
 # Guardrails: Constraint Registry
 

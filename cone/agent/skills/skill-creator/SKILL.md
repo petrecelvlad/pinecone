@@ -1,22 +1,15 @@
 ---
-name: skill-creator
+type: Skill
+title: Skill Creator
 description: >
-  Create new skills, modify and improve existing skills. Use when the user wants to
-  create a skill from scratch, edit or optimize an existing skill, capture a workflow
-  as a reusable skill, or improve how reliably a skill triggers.
-
-  Trigger when: "make a skill for", "create a skill that", "turn this into a skill",
-  "help me write a skill", "update my skill", "my skill isn't triggering",
-  "improve this skill".
+  Meta-skill for creating, modifying, and improving agent skills — reusable instruction
+  sets for recurring tasks.
+tags: [skill, meta]
+timestamp: 2026-06-23T00:00:00Z
+agent_instructions: >
+  Meta-skill: use this to design, write, and iterate on any new skill.
+  Read before creating any skill from scratch.
 ---
-
-/**
- * @propolis
- * {
- *   "role": "SKILL",
- *   "agent_instructions": "Meta-skill: use this to design, write, and iterate on any new skill. Read before creating any skill from scratch."
- * }
- */
 
 # Skill Creator
 
@@ -172,4 +165,4 @@ If the skill exists but isn't being used when it should be:
 
 ## After Creating a Skill
 
-Add an entry to `cone/agent/skills/README.md` with the skill name, purpose, and trigger phrases.
+Add an entry to [README.md](../README.md) with the skill name, purpose, and trigger phrases.

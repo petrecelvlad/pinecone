@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Keep current — this is the active work queue, not a wish list"],
- *   "agent_instructions": "Active work queue. Check this at the start of each session to understand priorities. Move completed items to the Done section, not to archive."
- * }
- */
+---
+type: Protocol
+title: Backlog
+description: Active work queue — prioritized items ready to work on, not a wish list.
+tags: [roadmap, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Keep current — this is the active work queue, not a wish list
+agent_instructions: >
+  Active work queue. Check this at the start of each session to understand priorities.
+  Move completed items to the Done section, not to archive.
+---
 
 # Backlog
 

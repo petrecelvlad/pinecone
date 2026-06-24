@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Must reflect actual deployment pipeline"],
- *   "agent_instructions": "Deployment procedures and CI/CD documentation. Covers how code goes from a local branch to production. Update when the pipeline changes."
- * }
- */
+---
+type: Protocol
+title: Deployment
+description: Deployment procedures and CI/CD — how code goes from local branch to production.
+tags: [operations, deployment, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Must reflect actual deployment pipeline
+agent_instructions: >
+  Deployment procedures and CI/CD documentation. Covers how code goes from a local branch
+  to production. Update when the pipeline changes.
+---
 
 # Deployment
 

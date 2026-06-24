@@ -1,13 +1,15 @@
-<!--
-=== SESSION ARCHIVE PROTOCOL ===
-ONE session = ONE continuous conversation.
-Do NOT create new files for subtasks within the same conversation.
-If continuing in same chat, reuse this file.
-New conversation = new file in the appropriate date folder.
-DO NOT DELETE session files — they are permanent archives.
-See cone/agent/onboarding/SESSIONS.md for the full protocol.
-=== END PROTOCOL ===
--->
+---
+type: Template
+title: Session Template
+description: Template for session files — copy into the appropriate date folder for each new session.
+tags: [session, template, agent]
+timestamp: 2026-06-23T00:00:00Z
+agent_instructions: >
+  ONE session = ONE continuous conversation. Do NOT create new files for subtasks within
+  the same conversation. If continuing in same chat, reuse this file. New conversation =
+  new file in the appropriate date folder. DO NOT DELETE session files — they are permanent
+  archives. See /agent/onboarding/SESSIONS.md for the full protocol.
+---
 
 # Session NN: [Session Title]
 

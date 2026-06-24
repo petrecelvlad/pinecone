@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Template — copy and rename for each new system doc"],
- *   "agent_instructions": "System documentation template. Copy this file, rename to the system name (e.g., AUTH.md, PAYMENTS.md), and fill in each section. A system doc should let an agent understand a subsystem without reading its source code."
- * }
- */
+---
+type: Template
+title: "System Documentation Template"
+description: Template for per-subsystem documentation — copy and rename for each new system.
+tags: [architecture, template, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Template — copy and rename for each new system doc
+agent_instructions: >
+  System documentation template. Copy this file, rename to the system name (e.g., AUTH.md,
+  PAYMENTS.md), and fill in each section. A system doc should let an agent understand a
+  subsystem without reading its source code.
+---
 
 # System: [System Name]
 

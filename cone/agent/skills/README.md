@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Update this index whenever a skill is added or removed"],
- *   "agent_instructions": "Skills index. Read to understand what skills are available and when to use them. A skill is a procedural workflow — it tells you HOW to do something. A persona tells you HOW to think."
- * }
- */
+---
+type: Protocol
+title: Skills
+description: Skills index — what skills are available, when to use them, skill vs persona distinction.
+tags: [skill, agent, index]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Update this index whenever a skill is added or removed
+agent_instructions: >
+  Skills index. Read to understand what skills are available and when to use them.
+  A skill is a procedural workflow — it tells you HOW to do something.
+  A persona tells you HOW to think.
+---
 
 # Skills
 

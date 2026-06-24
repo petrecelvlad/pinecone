@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Update this index whenever a persona is added or removed"],
- *   "agent_instructions": "Personas index. Read to understand what personas are available, how they activate, and how they differ from skills."
- * }
- */
+---
+type: Protocol
+title: Personas
+description: Personas index — what personas are available, activation modes, persona vs skill distinction.
+tags: [persona, agent, index]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Update this index whenever a persona is added or removed
+agent_instructions: >
+  Personas index. Read to understand what personas are available, how they activate,
+  and how they differ from skills.
+---
 
 # Personas
 

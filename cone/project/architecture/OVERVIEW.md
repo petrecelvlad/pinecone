@@ -1,11 +1,15 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Must be kept current with the actual system design"],
- *   "agent_instructions": "This is the system architecture overview. Fill in each section for your project. An agent reading this should understand the system's intent without reading source code."
- * }
- */
+---
+type: Architecture
+title: System Architecture Overview
+description: System design overview — purpose, key decisions, module structure, data flow, constraints.
+tags: [architecture, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Must be kept current with the actual system design
+agent_instructions: >
+  This is the system architecture overview. Fill in each section for your project.
+  An agent reading this should understand the system's intent without reading source code.
+---
 
 # System Architecture Overview
 

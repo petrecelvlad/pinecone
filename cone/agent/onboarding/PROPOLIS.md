@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Defines the metadata standard for all source files"],
- *   "agent_instructions": "This document defines the @propolis metadata standard. Read it before adding propolis blocks to source files. Use the simplified 3-field schema — not the extended version."
- * }
- */
+---
+type: Protocol
+title: "Propolis: File-Level Metadata Standard"
+description: Defines the @propolis metadata standard for source code files.
+tags: [onboarding, propolis, agent]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Defines the metadata standard for all source files
+agent_instructions: >
+  This document defines the @propolis metadata standard for code files. Markdown files in the
+  cone/ bundle use OKF YAML frontmatter instead — see cone/evolution/OKF/OKF_ADAPTATION.md.
+  Use the simplified 3-field schema for code files — not the extended version.
+---
 
 # Propolis: File-Level Metadata Standard
 

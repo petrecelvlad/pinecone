@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Must stay current with actual dev setup requirements"],
- *   "agent_instructions": "Local development setup guide. An agent or developer following this should go from a clean checkout to a running dev environment. Update this whenever dependencies, tooling, or setup steps change."
- * }
- */
+---
+type: Protocol
+title: Local Development Setup
+description: Setup guide — from clean checkout to running dev environment.
+tags: [operations, setup, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Must stay current with actual dev setup requirements
+agent_instructions: >
+  Local development setup guide. An agent or developer following this should go from a clean
+  checkout to a running dev environment. Update this whenever dependencies, tooling, or setup
+  steps change.
+---
 
 # Local Development Setup
 

@@ -1,17 +1,22 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Technology-agnostic", "Read at the start of any coding session"],
- *   "agent_instructions": "Universal coding behavior guide. Governs HOW I write code, not WHAT system I'm building. Read this before writing or modifying any source file."
- * }
- */
+---
+type: Protocol
+title: Universal Coding Companion
+description: Universal coding behavior guide — governs HOW to write code, not WHAT system to build.
+tags: [onboarding, coding, agent]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Technology-agnostic
+  - Read at the start of any coding session
+agent_instructions: >
+  Universal coding behavior guide. Governs HOW I write code, not WHAT system I'm building.
+  Read this before writing or modifying any source file.
+---
 
 # Universal Coding Companion
 
 > **What this is:** Behavioral guidance for coding sessions — the HOW layer. It is technology-agnostic and applies to any project.
 >
-> **What this is not:** Architecture rules (those live in `AGENT.md` and `cone/project/architecture/`). This document governs how you write code, not what system you're building.
+> **What this is not:** Architecture rules (those live in `AGENT.md` and [architecture/](../../project/architecture/OVERVIEW.md)). This document governs how you write code, not what system you're building.
 >
 > **When to read it:** At the start of any session where you will write or modify code.
 

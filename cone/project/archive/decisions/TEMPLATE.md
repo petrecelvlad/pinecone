@@ -1,11 +1,16 @@
-/**
- * @propolis
- * {
- *   "role": "PROTOCOL",
- *   "constraints": ["Template — copy this file for each new ADR"],
- *   "agent_instructions": "Architecture Decision Record template. Copy this file, rename it, and fill in the sections. ADRs are immutable once accepted — if a decision is superseded, create a new ADR that references the old one."
- * }
- */
+---
+type: Template
+title: ADR Template
+description: Architecture Decision Record template — copy and rename for each new decision.
+tags: [archive, decisions, template, project]
+timestamp: 2026-06-23T00:00:00Z
+constraints:
+  - Template — copy this file for each new ADR
+agent_instructions: >
+  Architecture Decision Record template. Copy this file, rename it, and fill in the sections.
+  ADRs are immutable once accepted — if a decision is superseded, create a new ADR that
+  references the old one.
+---
 
 # ADR-NNN: [Decision Title]
 
