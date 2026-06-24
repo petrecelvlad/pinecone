@@ -42,11 +42,16 @@ function parseFrontmatter(content) {
   return { fields, raw: yaml };
 }
 
+function stripCodeBlocks(content) {
+  return content.replace(/```[\s\S]*?```/g, "");
+}
+
 function extractLinks(content, docDir) {
+  const stripped = stripCodeBlocks(content);
   const links = [];
   const re = /\]\(([^)\s]+\.md)(?:#[A-Za-z0-9_-]*)?\)/g;
   let m;
-  while ((m = re.exec(content)) !== null) {
+  while ((m = re.exec(stripped)) !== null) {
     const target = m[1];
     if (target.includes("://")) continue;
     const resolved = path.resolve(docDir, target);

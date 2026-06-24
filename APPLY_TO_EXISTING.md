@@ -13,7 +13,7 @@ Understand what cone-lite adds vs. what you already have:
 | `AGENT.md` constitution | README, CONTRIBUTING, or custom instructions | Merge — `AGENT.md` becomes the primary entry point |
 | `CLAUDE.md` companion | Possibly scattered AI instructions | Consolidate into `CLAUDE.md` |
 | `cone/` knowledge system | `docs/`, wiki, or inline documentation | `cone/` sits alongside existing docs |
-| Propolis metadata | Possibly JSDoc, docstrings, or nothing | Add incrementally to high-traffic files |
+| Propolis metadata (code files) | Possibly JSDoc, docstrings, or nothing | Add incrementally to high-traffic files |
 | Session protocol | Possibly git log, PR descriptions, or nothing | Start fresh — no need to backfill |
 
 ---
@@ -73,12 +73,14 @@ your-project/
 
 ---
 
-## Step 4: Add Propolis Metadata (Incrementally)
+## Step 4: Add Propolis Metadata to Code Files (Incrementally)
+
+The `cone/` knowledge bundle already uses OKF YAML frontmatter on all its markdown files — no action needed there. This step is about your **source code** files.
 
 Do NOT try to add `@propolis` blocks to every file at once. Instead:
 
 ### Phase 1: High-Traffic Files (First Week)
-Add `@propolis` blocks to files that agents touch most often:
+Add `@propolis` blocks to code files that agents touch most often:
 - Entry points (main, index, app)
 - Core business logic files
 - Database/API adapters
@@ -96,10 +98,10 @@ Add `@propolis` blocks to files that agents touch most often:
 ```
 
 ### Phase 2: As You Touch Files (Ongoing)
-When you modify any file during normal development, add a `@propolis` block if it doesn't have one. Coverage grows naturally with development activity.
+When you modify any code file during normal development, add a `@propolis` block if it doesn't have one. Coverage grows naturally with development activity.
 
-### Phase 3: Critical Mass (When Ready)
-Once ~60% of source files have `@propolis` blocks, implement the `graph:sync` script to generate a dependency graph. Before that threshold, the graph isn't useful enough to maintain.
+### Phase 3: Visualize (When Ready)
+Run `npm run visualize` to generate an interactive HTML graph of your `cone/` knowledge bundle. Run `npm run lint:okf` to validate frontmatter and catch broken links. Once ~60% of source files also have `@propolis` blocks, implement the `graph:sync` script to include code files in the dependency graph.
 
 ---
 
@@ -112,7 +114,7 @@ Keep it. `cone/project/` handles project-level documentation (architecture, spec
 Link to it from `cone/project/architecture/OVERVIEW.md`. The wiki remains the source of truth for whatever it covers; `cone/` adds the structured layer.
 
 ### If you have inline documentation
-Propolis metadata complements inline docs. `@propolis` tells agents what a file IS and what constraints apply. Inline docs explain what the code DOES. They're not redundant.
+Propolis metadata complements inline docs. `@propolis` (for code files) tells agents what a file IS and what constraints apply. Inline docs explain what the code DOES. They're not redundant. Note: markdown files in `cone/` use OKF YAML frontmatter instead of `@propolis`.
 
 ### If you have ADRs
 Move them to `cone/project/archive/decisions/` or link to their current location. The ADR template in `cone/project/archive/decisions/TEMPLATE.md` is a starting point — adapt it to match your existing ADR format if you have one.
@@ -128,7 +130,7 @@ Read `cone/agent/onboarding/SESSIONS.md` for the full session protocol. Then cre
 3. Rename it: `01_CONE_LITE_MIGRATION.md`
 4. Record:
    - What you customized in `AGENT.md`
-   - Which files got `@propolis` blocks
+   - Which code files got `@propolis` blocks
    - What existing docs you integrated
    - What you decided to leave for later
 

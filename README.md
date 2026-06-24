@@ -1,6 +1,6 @@
 # cone-lite
 
-A universal documentation framework for AI-assisted software development. Born from the [Hive OS](https://github.com/petrecelvlad) pinecone system, distilled into a project-agnostic template that any team or solo developer can fork, customize, and grow.
+A universal documentation framework for AI-assisted software development. A project-agnostic template that any team or solo developer can fork, customize, and grow.
 
 cone-lite turns documentation from passive reference into active behavioral programming. Instead of READMEs that agents skim and forget, it provides a structured system where every document has one job, agents onboard through a dependency-ordered sequence, and institutional knowledge accumulates across conversations.
 
@@ -69,5 +69,3 @@ cone-lite/
 MIT
 
 ---
-
-*Origin: Distilled from the Hive OS pinecone documentation system.*

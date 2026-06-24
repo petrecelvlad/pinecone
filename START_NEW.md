@@ -115,7 +115,7 @@ The framework is live. From here:
 - **Every mistake** worth remembering goes in `cone/project/memory/ANTI_PATTERNS.md`
 - **Every confirmed practice** goes in `cone/project/memory/LESSONS.md`
 - **Every recurring workflow** becomes a skill in `cone/agent/skills/`
-- **Every new source file** gets a `@propolis` block (see `cone/agent/onboarding/PROPOLIS.md`)
+- **Every new code file** gets a `@propolis` block (see `cone/agent/onboarding/PROPOLIS.md`); markdown files in `cone/` already use OKF YAML frontmatter
 - **Every framework improvement idea** becomes a proposal via `cone/agent/skills/evolution/SKILL.md`
 
 The framework grows with you. Don't try to fill everything in advance — add documents as the project creates the need for them.
@@ -126,6 +126,8 @@ The framework grows with you. Don't try to fill everything in advance — add do
 
 | When... | Add... |
 |---|---|
+| You want to validate the knowledge bundle | Run `npm run lint:okf` to check frontmatter and links |
+| You want a visual map of the knowledge system | Run `npm run visualize` to generate an interactive HTML graph |
 | Project has 20+ source files | `graph:sync` script implementation |
 | You notice repeated debugging patterns | Entries in `cone/project/memory/PLAYBOOK.md` |
 | A major design decision is made | An ADR in `cone/project/archive/decisions/` |
