@@ -1,7 +1,7 @@
 ---
 type: Evolution Proposal
-title: "Proposal 4: Remove Hive OS References, Update Adoption Guides for OKF"
-description: Erase all Hive OS provenance, update START_NEW.md and APPLY_TO_EXISTING.md for the OKF metadata model, improve linter.
+title: "Proposal 4: Remove the original project References, Update Adoption Guides for OKF"
+description: Erase all the original project provenance, update START_NEW.md and APPLY_TO_EXISTING.md for the OKF metadata model, improve linter.
 tags: [evolution, proposal]
 timestamp: 2026-06-24T00:00:00Z
 status: IMPLEMENTED
@@ -10,21 +10,21 @@ affected_pillar: both
 author: Claude Sonnet 4.6
 ---
 
-# Proposal 4: Remove Hive OS References, Update Adoption Guides for OKF
+# Proposal 4: Remove the original project References, Update Adoption Guides for OKF
 
 ## Summary
 
-The README still traces cone-lite's origin to "Hive OS" — this must be removed entirely. The two adoption guides (START_NEW.md and APPLY_TO_EXISTING.md) still describe the pre-OKF metadata model exclusively, telling users to add @propolis blocks to all files including markdown. The linter produces false-positive warnings on links inside code blocks.
+The README still traces cone-lite's origin to "the original project" — this must be removed entirely. The two adoption guides (START_NEW.md and APPLY_TO_EXISTING.md) still describe the pre-OKF metadata model exclusively, telling users to add @propolis blocks to all files including markdown. The linter produces false-positive warnings on links inside code blocks.
 
 ---
 
 ## Findings
 
-### 1. README.md Contains Hive OS References
+### 1. README.md Contains the original project References
 **Category:** Coverage
 **Impact:** HIGH
-**Current state:** Line 3: "Born from the [Hive OS](https://github.com/petrecelvlad) pinecone system". Line 73: "Origin: Distilled from the Hive OS pinecone documentation system."
-**Problem:** User explicitly wants zero Hive OS references anywhere in the project.
+**Current state:** Line 3: "Born from the [the original project](https://github.com/petrecelvlad) pinecone system". Line 73: "Origin: Distilled from the the original project pinecone documentation system."
+**Problem:** User explicitly wants zero the original project references anywhere in the project.
 **Recommendation:** Rewrite the opening paragraph to describe cone-lite on its own terms. Remove the origin line entirely.
 
 ### 2. START_NEW.md Describes Pre-OKF Metadata Only
@@ -52,7 +52,7 @@ The README still traces cone-lite's origin to "Hive OS" — this must be removed
 
 ## Implementation Order
 
-1. Finding 1 (Hive OS removal) — immediate, user-critical
+1. Finding 1 (the original project removal) — immediate, user-critical
 2. Finding 4 (linter code block awareness) — quick, eliminates persistent noise
 3. Finding 2 (START_NEW.md) — quick edit
 4. Finding 3 (APPLY_TO_EXISTING.md) — moderate edit, most content
