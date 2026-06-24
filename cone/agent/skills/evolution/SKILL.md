@@ -38,7 +38,7 @@ The cone-lite framework is a living system. It should grow and adapt as the proj
 
 ## Step 1 — Audit the Framework
 
-Perform a systematic audit across these categories. For each, ask the guiding questions and note findings.
+Start by running `npm run lint:okf` — it answers several structural health questions automatically (missing frontmatter, missing type fields, broken links). Then perform a systematic audit across these categories, noting findings.
 
 ### A. Onboarding Efficiency
 

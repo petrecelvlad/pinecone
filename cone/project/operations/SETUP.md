@@ -55,6 +55,8 @@ agent_instructions: >
 
 | Command | What it does |
 |---|---|
+| `npm run lint:okf` | Validate OKF bundle — checks frontmatter, type fields, broken links |
+| `npm run visualize` | Generate interactive HTML graph of the cone/ knowledge bundle (requires Python `reference-agent` package from [GoogleCloudPlatform/knowledge-catalog](https://github.com/GoogleCloudPlatform/knowledge-catalog)) |
 | `npm run dev` | *Start development server* |
 | `npm run build` | *Build for production* |
 | `npm run test` | *Run test suite* |
