@@ -60,12 +60,24 @@ Save if ALL are true:
 
 ---
 
-## Non-Obvious Pointers
+## OKF (Open Knowledge Format)
 
-<!-- CUSTOMIZE: Add project-specific pointers that save agents time. Examples: -->
-<!-- - "The auth token is validated in middleware/auth.ts, not in individual routes" -->
-<!-- - "Environment detection lives in utils/env.ts — never hardcode URLs" -->
-<!-- - "The database schema is the source of truth, not the TypeScript types" -->
+The `cone/` directory is an OKF v0.1 conformant knowledge bundle. This means:
+
+- **Every markdown file** in `cone/` (except `index.md` and `log.md`) has YAML frontmatter with at least a `type` field. This replaces the old `@propolis` JSON blocks in markdown.
+- **`@propolis` in code files** is unchanged — it still uses JSON in language-appropriate comments. OKF only governs the markdown knowledge bundle.
+- **`index.md` files** exist at each directory level for progressive disclosure. They have no frontmatter — they're directory listings, not concept documents.
+- **Cross-links** between documents use relative markdown paths (e.g., `[SESSIONS.md](./SESSIONS.md)`) so the OKF graph visualizer can detect edges.
+- **Concept IDs** are derived from file paths (no explicit `id` field). `agent/personas/DEVELOPER` is the concept ID for `cone/agent/personas/DEVELOPER.md`.
+- **Extension fields** (`constraints`, `agent_instructions`, `always_active`, `scope`) are cone-specific additions that OKF explicitly permits.
+
+**Visualizer:** Run `python -m reference_agent visualize --bundle cone --out cone_viz.html --name "cone-lite"` (requires the `reference-agent` package from `GoogleCloudPlatform/knowledge-catalog`). Opens as a self-contained HTML graph in any browser.
+
+**Design docs:** `cone/evolution/OKF/` contains the spec extract, original concept, and accepted adaptation design.
+
+---
+
+## Non-Obvious Pointers
 
 *Add project-specific navigation hints here as you discover them.*
 

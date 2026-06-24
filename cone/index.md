@@ -20,4 +20,5 @@
 
 ## Evolution
 
-* [OKF](evolution/OKF/) - Open Knowledge Format integration
+* [Proposal Template](evolution/PROPOSAL_TEMPLATE.md) - OKF-typed template for evolution proposals
+* [OKF](evolution/OKF/) - Open Knowledge Format migration and design docs

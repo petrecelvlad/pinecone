@@ -53,11 +53,11 @@ Perform a systematic audit across these categories. For each, ask the guiding qu
 
 *Is everything that should be documented actually documented?*
 
-- Are there major systems or components without architecture docs in [systems/](../../project/architecture/systems/TEMPLATE.md)?
+- Are there major systems or components without architecture docs in [systems/](../../../project/architecture/systems/TEMPLATE.md)?
 - Are there repeated decisions being made that should be an ADR?
-- Are there recurring debugging patterns not captured in [PLAYBOOK.md](../../project/memory/PLAYBOOK.md)?
-- Are there known pitfalls not in [ANTI_PATTERNS.md](../../project/memory/ANTI_PATTERNS.md)?
-- Are there confirmed practices not in [LESSONS.md](../../project/memory/LESSONS.md)?
+- Are there recurring debugging patterns not captured in [PLAYBOOK.md](../../../project/memory/PLAYBOOK.md)?
+- Are there known pitfalls not in [ANTI_PATTERNS.md](../../../project/memory/ANTI_PATTERNS.md)?
+- Are there confirmed practices not in [LESSONS.md](../../../project/memory/LESSONS.md)?
 
 ### C. Agent Workflow Gaps
 
@@ -122,51 +122,17 @@ Rank findings by impact:
 
 Create a new proposal file in `cone/evolution/`:
 
+**Template:** Copy [PROPOSAL_TEMPLATE.md](../../../evolution/PROPOSAL_TEMPLATE.md) — it defines the OKF frontmatter and body structure.
+
 **Naming:** `Proposal_N.md` where N is the next number in sequence. Check the folder for the current highest number.
 
-**Format:**
+**Key frontmatter fields:**
+- `type: Evolution Proposal` — makes proposals OKF concepts, queryable by type
+- `status` — `PROPOSED` | `ACCEPTED` | `REJECTED` | `IMPLEMENTED`
+- `impact` — `HIGH` | `MEDIUM` | `LOW`
+- `affected_pillar` — `agent` | `project` | `both`
 
-```markdown
-# Proposal N: [Title]
-
-**Date:** YYYY-MM-DD
-**Author:** [Agent name/model]
-**Status:** PROPOSED | ACCEPTED | REJECTED | IMPLEMENTED
-**Impact:** HIGH | MEDIUM | LOW
-
----
-
-## Summary
-
-[2-3 sentences: what this proposal improves and why it matters]
-
----
-
-## Findings
-
-### [Finding 1 Title]
-**Category:** [Onboarding | Coverage | Workflow | Structure | Propolis | Sessions | Practices]
-**Impact:** HIGH | MEDIUM | LOW
-**Current state:** [What exists now — be specific]
-**Problem:** [What's wrong or missing]
-**Recommendation:** [What should change — be specific enough to implement]
-
-### [Finding 2 Title]
-...
-
----
-
-## Implementation Order
-
-[If accepted, what order should the findings be implemented in? Which are quick wins vs. larger efforts?]
-
-1. [Finding] — [effort estimate: quick/medium/large]
-2. [Finding] — [effort estimate]
-...
-
----
-
-## Notes
+**Notes
 
 [Any additional context, caveats, or dependencies between findings]
 ```
