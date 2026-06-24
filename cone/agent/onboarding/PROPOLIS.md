@@ -1,22 +1,24 @@
 ---
 type: Protocol
-title: "Propolis: File-Level Metadata Standard"
-description: Defines the @propolis metadata standard for source code files.
+title: "Propolis: Code File Metadata Standard"
+description: Defines the @propolis metadata standard for source code files. Does not apply to markdown — those use OKF frontmatter.
 tags: [onboarding, propolis, agent]
 timestamp: 2026-06-23T00:00:00Z
 constraints:
-  - Defines the metadata standard for all source files
+  - Defines the metadata standard for source code files (not markdown)
 agent_instructions: >
   This document defines the @propolis metadata standard for code files. Markdown files in the
   cone/ bundle use OKF YAML frontmatter instead — see cone/evolution/OKF/OKF_ADAPTATION.md.
   Use the simplified 3-field schema for code files — not the extended version.
 ---
 
-# Propolis: File-Level Metadata Standard
+# Propolis: Code File Metadata Standard
+
+Propolis is the metadata standard for **source code files** — `.ts`, `.py`, `.rs`, `.html`, and any other code. It does not apply to markdown files in `cone/`, which use [OKF YAML frontmatter](../../evolution/OKF/OKF_ADAPTATION.md) instead.
 
 ## Philosophy
 
-Every source file in the project should be self-describing. An agent landing on any file should instantly know: what it is, what constraints apply, and what to be careful about. Propolis metadata makes the codebase transparent without requiring the agent to read surrounding context.
+Every source code file in the project should be self-describing. An agent landing on any code file should instantly know: what it is, what constraints apply, and what to be careful about. Propolis metadata makes the codebase transparent without requiring the agent to read surrounding context.
 
 This is the **Glass Box** principle: all logic is visible through structured metadata and explicit annotations.
 
@@ -24,7 +26,7 @@ This is the **Glass Box** principle: all logic is visible through structured met
 
 ## The Schema
 
-Every source file begins with a `@propolis` JSON block inside a JSDoc comment:
+Every source code file begins with a `@propolis` JSON block inside a comment:
 
 ```typescript
 /**
@@ -83,14 +85,6 @@ Use these standard roles. Add project-specific roles as needed.
 | `UTIL` | Shared utility functions |
 | `TEST` | Test file |
 | `SCRIPT` | Build, deployment, or maintenance script |
-
-### Documentation Roles
-| Role | Meaning |
-|---|---|
-| `BOOTLOADER` | Framework onboarding document |
-| `PROTOCOL` | Standard or specification |
-| `PERSONA` | Agent mental model definition |
-| `SKILL` | Agent workflow definition |
 
 ---
 

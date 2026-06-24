@@ -52,18 +52,6 @@ scope: universal|project|task         # how broadly I apply this persona
 ---
 ```
 
-### @propolis Block
-
-```markdown
-/**
- * @propolis
- * {
- *   "role": "PERSONA",
- *   "agent_instructions": "One sentence: what I am in this persona and when I adopt it."
- * }
- */
-```
-
 ### My Identity
 One paragraph. What I AM in this persona — the role archetype I embody, the lens I apply, and the problem I was designed to solve.
 

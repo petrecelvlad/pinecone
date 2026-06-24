@@ -95,7 +95,7 @@ These documents are consulted during work, not during onboarding:
 | When I need to... | I read... |
 |---|---|
 | Create or manage a session file | [SESSIONS.md](./SESSIONS.md) |
-| Add file metadata | [PROPOLIS.md](./PROPOLIS.md) |
+| Add code file metadata | [PROPOLIS.md](./PROPOLIS.md) |
 | Understand hex architecture | [HEXAGONAL.md](../../project/architecture/HEXAGONAL.md) |
 | Check architectural constraints | [GUARDRAILS.md](../../project/architecture/GUARDRAILS.md) |
 | Document a subsystem | [systems/TEMPLATE.md](../../project/architecture/systems/TEMPLATE.md) |

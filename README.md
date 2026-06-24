@@ -16,7 +16,7 @@ cone-lite turns documentation from passive reference into active behavioral prog
 
 4. **Personas (How I Think) vs Skills (How I Do)** — Mental models for reasoning (personas) compose with procedural workflows (skills). The persona shapes thinking; the skill guides execution.
 
-5. **Propolis Metadata** — Every source file begins with a `@propolis` block declaring its role, constraints, and agent instructions. Makes the codebase self-describing.
+5. **Propolis Metadata** — Every source code file begins with a `@propolis` block declaring its role, constraints, and agent instructions. Markdown files in `cone/` use OKF YAML frontmatter instead. Together they make the entire project self-describing.
 
 6. **Session Archive** — Sessions serve dual purpose: live tracking during work AND permanent history after. Organized chronologically with global numbering, handoff protocols, and searchable semantic titles.
 
