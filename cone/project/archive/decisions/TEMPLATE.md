@@ -9,7 +9,8 @@ constraints:
 agent_instructions: >
   Architecture Decision Record template. Copy this file, rename it, and fill in the sections.
   ADRs are immutable once accepted — if a decision is superseded, create a new ADR that
-  references the old one.
+  references the old one. Before creating one, apply the gate below — not every decision
+  warrants an ADR.
 ---
 
 # ADR-NNN: [Decision Title]
@@ -17,6 +18,20 @@ agent_instructions: >
 **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NNN
 
 **Date:** YYYY-MM-DD
+
+---
+
+## Should This Be an ADR?
+
+Write one only if all three are true:
+
+- **Hard to reverse** — undoing this later would be costly, not a quick edit.
+- **Surprising without context** — a future reader would ask "why did we do it this way?" without an explanation.
+- **The result of a real trade-off** — a genuine alternative existed and was consciously rejected, not the only reasonable option.
+
+If any of the three is missing, don't write an ADR — record the decision in the session file's Decisions section instead. That's enough for anything reversible, unsurprising, or without a real alternative.
+
+When it does clear the gate, default to a **short form**: 1-3 sentences per section below is normal. Expand into fuller prose only when the trade-off genuinely needs the space to explain.
 
 ---
 

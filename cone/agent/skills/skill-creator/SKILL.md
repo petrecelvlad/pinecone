@@ -21,6 +21,8 @@ A skill for designing, writing, and iteratively improving agent skills — reusa
 
 A skill is a folder containing a `SKILL.md` file — structured instructions an agent reads before tackling a specific category of task. The agent reads it, follows the process, and produces better, more consistent output than freeforming.
 
+**Predictability is the root virtue.** The entire value of a skill is that it produces the same quality of outcome on run 50 as on run 1, regardless of which agent or which session runs it. Every other piece of guidance in this document — description quality, examples, output formats, failure modes — exists in service of that one property. If a change to a skill doesn't make its output more predictable, question whether it belongs.
+
 Skills are useful when:
 - A task has a repeatable structure that benefits from a defined process
 - Outputs need to be consistent across different prompts or agents
@@ -94,6 +96,10 @@ skill-name/
     └── variant-b.md
 ```
 
+**Information hierarchy.** When a skill needs supporting detail, add it in this order of preference, and stop as soon as one level is enough: (1) inline in the `SKILL.md` body — the default; (2) a reference file inside the skill's own folder, pointed to by name, read only when that variant applies; (3) an external document elsewhere in the repo, linked by path. Each level costs more for an agent to reach — don't reach for level 2 or 3 when level 1 would do.
+
+**Hard vs. soft dependencies.** If a skill fails outright without some prior setup (a config file, an installed tool, an established convention it reads), say so explicitly and point at what to run first — don't let the agent discover the failure mid-task. If a skill just degrades gracefully without that setup (falls back to a sane default, asks instead of assuming), don't spend tokens hedging about it — state the default and move on.
+
 ---
 
 ## Step 3 — Write Test Cases
@@ -148,6 +154,17 @@ If the skill exists but isn't being used when it should be:
 4. Repeat until the description handles the edge cases
 
 ---
+
+## Failure Modes to Check a Draft Against
+
+Before shipping a skill, check it against these named failure modes — recognizing which one you're looking at is faster than re-deriving the problem from scratch each time:
+
+- **Premature completion** — the skill lets the agent report success before the actual completion criteria are met. Fix by making completion criteria explicit and checkable, not implied.
+- **Duplication** — the same guidance exists in two skills (or a skill and a persona), and they'll drift out of sync the first time one gets edited. Fix by having one reference the other instead of restating it.
+- **Sediment** — instructions that made sense for an earlier version of the workflow are still there after the workflow changed, quietly misleading anyone who follows them literally. Fix by re-reading the whole skill during any edit, not just the section being changed.
+- **Sprawl** — the skill has grown to cover cases far outside its original trigger, and now under-serves its core case to accommodate edge cases that rarely occur. Fix by splitting into a second skill, or cutting the rare cases back out.
+- **No-op** — the skill's instructions don't actually change what the agent would have done anyway. If a skill isn't measurably shaping behavior, it isn't earning its token cost.
+- **Negation** — the skill is a list of things not to do, with no positive action stated. Prohibitions alone don't tell the agent what to do instead, so it improvises — often right back into the prohibited behavior. Reframe every "don't X" as "do Y."
 
 ## What Not To Do
 

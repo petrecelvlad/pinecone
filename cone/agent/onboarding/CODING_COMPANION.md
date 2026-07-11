@@ -167,6 +167,8 @@ Names are the primary form of documentation. A good name makes a comment unneces
 
 **Sequence:** Refactor in a separate commit from feature changes. A commit that adds behavior AND restructures code is hard to review and hard to revert.
 
+**Wide refactors: expand-contract.** Some refactors are mechanical but touch too many call sites to land as one vertical slice — renaming a widely-used type, changing a function's signature across dozens of callers. Don't do these as one large commit, and don't abandon them partway with the codebase in a mixed state. Sequence them in three phases: **expand** (add the new form alongside the old — nothing breaks yet), **migrate** (move callers in blast-radius-sized batches, each independently shippable, tests green throughout), **contract** (delete the old form once no caller references it). Each phase is a separate commit; the migrate phase can be several.
+
 ---
 
 ## 10. Code Review Mindset

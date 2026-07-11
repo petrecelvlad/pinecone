@@ -169,4 +169,4 @@ If you need a type in both Core and Adapters, it belongs in a shared contract/ty
 
 ## Further Reading
 
-For project-specific architectural documentation, see [OVERVIEW.md](./OVERVIEW.md) and per-system docs in [systems/](./systems/TEMPLATE.md).
+For project-specific architectural documentation, see [OVERVIEW.md](./OVERVIEW.md) and per-system docs in [systems/](./systems/TEMPLATE.md). For the shape of an individual module's interface — depth, seams, the deletion test — see [MODULE_DESIGN.md](./MODULE_DESIGN.md), which operates one level down from this document: this page governs the boundary between Core and infrastructure; that one governs the boundary between any module and its callers.

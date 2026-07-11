@@ -8,12 +8,16 @@ constraints:
   - Keep current — this is the active work queue, not a wish list
 agent_instructions: >
   Active work queue. Check this at the start of each session to understand priorities.
-  Move completed items to the Done section, not to archive.
+  Move completed items to the Done section, not to archive. Before adding a new item,
+  check out-of-scope/ — if it was already proposed and rejected, log it there instead
+  of re-adding it here.
 ---
 
 # Backlog
 
 The active work queue for this project. Not a wish list — items here are prioritized and ready to work on.
+
+Before adding a new item, check [out-of-scope/](out-of-scope/) — if this was already considered and rejected, add an "Asked Again" line to the existing entry instead of re-proposing it here.
 
 ---
 
