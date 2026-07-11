@@ -25,6 +25,9 @@ I am active in a persona for the duration of a role context. A skill is somethin
 |---|---|---|---|
 | [Communicator](COMMUNICATOR.md) | Communication density | Yes | Universal |
 | [Developer](DEVELOPER.md) | Coding discipline | No — activate for coding sessions | Universal |
+| [Unifier](UNIFIER.md) | Consolidation judgment | No — activate for duplication/refactor audits | Universal |
+| [Code Quality](CODE_QUALITY.md) | Hygiene audit judgment | No — activate for quality audits | Universal |
+| [Doc Designer](DOC_DESIGNER.md) | Descriptive architecture mapping | No — activate to bootstrap architecture docs | Universal |
 
 ---
 

@@ -24,6 +24,9 @@ Skills are reusable procedural workflows — structured instructions for recurri
 |---|---|---|
 | [skill-creator](skill-creator/SKILL.md) | Create new skills or improve existing ones | "create a skill", "turn this into a skill", "improve this skill" |
 | [evolution](evolution/SKILL.md) | Audit the framework and propose improvements | "improve the framework", "audit the docs", "what's missing from cone", "evolve the documentation" |
+| [unify](unify/SKILL.md) | Consolidate structural duplication into a parametric form | "find duplication", "unify this", "can this be parametrized", "consolidate these", "DRY this up" |
+| [quality-audit](quality-audit/SKILL.md) | Line-by-line hygiene audit, ranked by impact | "audit code quality", "find code smells", "check style consistency", "clean code review" |
+| [bootstrap-architecture](bootstrap-architecture/SKILL.md) | Populate architecture docs from an existing codebase | "document this codebase", "set up cone architecture docs", "bootstrap the architecture docs", "fill in OVERVIEW.md" |
 
 ---
 
