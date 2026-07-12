@@ -1,5 +1,6 @@
 # Evolution
 
+* [Project Identity](PROJECT_IDENTITY.md) - Condensed pillars, philosophy, and fit criteria for evaluating external work
 * [Proposal Template](PROPOSAL_TEMPLATE.md) - OKF-typed template for evolution proposals
 * [Proposal 2](Proposal_2.md) - Post-OKF migration cleanup
 * [Proposal 3](Proposal_3.md) - Progressive disclosure gaps & stale tooling scripts
