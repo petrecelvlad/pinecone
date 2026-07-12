@@ -40,6 +40,40 @@ jobs:
           mkdir -p site
           python -m reference_agent visualize --bundle cone --out site/index.html --name cone-lite
 
+      - name: Widen cose layout spacing
+        run: |
+          python3 - <<'PATCH'
+          from pathlib import Path
+
+          path = Path("site/index.html")
+          html = path.read_text(encoding="utf-8")
+
+          # The upstream viz.js ships cytoscape's default "cose" force-layout options,
+          # which clump nodes together at this bundle's scale. Widen spacing by patching
+          # the generated HTML's inline script rather than forking the upstream tool.
+          cose_opts = (
+              '{ name: "cose", animate: false, padding: 30, '
+              'nodeRepulsion: 8000000, idealEdgeLength: 120, edgeElasticity: 100, '
+              'componentSpacing: 150, nodeOverlap: 20, gravity: 40, numIter: 1500 }'
+          )
+
+          initial_old = 'layout: { name: "cose", animate: false, padding: 30 },'
+          assert html.count(initial_old) == 1, "initial cose layout line not found — upstream viz.js changed"
+          html = html.replace(initial_old, f'layout: {cose_opts},')
+
+          switch_old = 'cy.layout({ name: e.target.value, animate: false, padding: 30 }).run();'
+          assert html.count(switch_old) == 1, "layout-switcher line not found — upstream viz.js changed"
+          switch_new = (
+              'cy.layout(e.target.value === "cose" ? '
+              f'{cose_opts} : '
+              '{ name: e.target.value, animate: false, padding: 30 }).run();'
+          )
+          html = html.replace(switch_old, switch_new)
+
+          path.write_text(html, encoding="utf-8")
+          print("Patched cose layout spacing.")
+          PATCH
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
