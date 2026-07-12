@@ -1,18 +1,18 @@
 ---
 type: Protocol
-title: OKF Migration Guide for Hive OS
-description: Step-by-step guide for an agent to migrate the Hive OS project from @propolis-everywhere to OKF + propolis-for-code.
+title: OKF Metadata Migration Guide
+description: Step-by-step guide for an agent to migrate a cone-lite project from @propolis-everywhere to OKF + propolis-for-code.
 tags: [evolution, okf, migration]
 timestamp: 2026-06-24T00:00:00Z
 agent_instructions: >
   This is a migration playbook. Read it end-to-end before touching any files.
   It describes what was done in the cone-lite project and how to replicate
-  the same migration in Hive OS. Follow the phases in order.
+  the same migration in your project. Follow the phases in order.
 ---
 
-# OKF Migration Guide for Hive OS
+# OKF Metadata Migration Guide
 
-This document tells you everything you need to apply the OKF migration to the Hive OS project. It was written after successfully completing this migration on the cone-lite framework. Follow it as a playbook.
+This document tells you everything you need to apply the OKF migration to your project. It was written after successfully completing this migration on the cone-lite framework itself. Follow it as a playbook. It applies to any project that adopted cone-lite before the OKF migration and still uses `@propolis` blocks on markdown files in `cone/`.
 
 ---
 

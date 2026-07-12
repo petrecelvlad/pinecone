@@ -43,7 +43,7 @@ A subsystem large or complex enough to have earned its own doc under [systems/](
 
 ## OKF vs. Propolis
 
-Two separate metadata systems with a strict scope split, easy to conflate. **OKF** (Open Knowledge Format) YAML frontmatter governs every markdown file in `cone/` (except `index.md` and `log.md`). **Propolis** (`@propolis` JSON blocks) governs source *code* files only — it does not apply to markdown. See [MIGRATION_GUIDE_HIVEOS.md](../../evolution/OKF/MIGRATION_GUIDE_HIVEOS.md) for the full history of this split.
+Two separate metadata systems with a strict scope split, easy to conflate. **OKF** (Open Knowledge Format) YAML frontmatter governs every markdown file in `cone/` (except `index.md` and `log.md`). **Propolis** (`@propolis` JSON blocks) governs source *code* files only — it does not apply to markdown. See [OKF_METADATA_MIGRATION_GUIDE.md](../../evolution/OKF/OKF_METADATA_MIGRATION_GUIDE.md) for the full history of this split.
 
 ## Concept (OKF term)
 
