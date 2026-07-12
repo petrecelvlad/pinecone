@@ -20,5 +20,7 @@
 
 ## Evolution
 
-* [Proposal Template](evolution/PROPOSAL_TEMPLATE.md) - OKF-typed template for evolution proposals
+* [Project Identity](evolution/PROJECT_IDENTITY.md) - Condensed pillars, philosophy, and fit criteria for evaluating external work
+* [Integration Candidates](evolution/INTEGRATION_CANDIDATES.md) - GitHub survey shortlist, pending fit-criteria deep dives
+* [Proposals](evolution/proposals/) - The numbered evolution-proposal log
 * [OKF](evolution/OKF/) - Open Knowledge Format migration and design docs

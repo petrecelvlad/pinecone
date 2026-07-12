@@ -72,7 +72,8 @@ Start by running `npm run lint:okf` — it answers several structural health que
 
 *Does the folder structure still serve the project's current scale?*
 
-- Are any folders overcrowded (10+ files with no subfolder organization)?
+Run the `restructure` skill's classify-by-kind check against every directory, not just the ones that feel crowded — kind-mixing often trips before a directory looks large. In addition:
+
 - Are any folders empty and likely to stay empty (dead structure)?
 - Does the agent/project pillar split still make sense for every document?
 - Are there cross-references between documents that point to wrong or stale paths?
@@ -120,11 +121,11 @@ Rank findings by impact:
 
 ## Step 3 — Write the Proposal
 
-Create a new proposal file in `cone/evolution/`:
+Create a new proposal file in `cone/evolution/proposals/`:
 
-**Template:** Copy [PROPOSAL_TEMPLATE.md](../../../evolution/PROPOSAL_TEMPLATE.md) — it defines the OKF frontmatter and body structure.
+**Template:** Copy [PROPOSAL_TEMPLATE.md](../../../evolution/proposals/PROPOSAL_TEMPLATE.md) — it defines the OKF frontmatter and body structure.
 
-**Naming:** `Proposal_N.md` where N is the next number in sequence. Check the folder for the current highest number.
+**Naming:** `Proposal_N.md` where N is the next number in sequence. Check the `proposals/` folder for the current highest number.
 
 **Key frontmatter fields:**
 - `type: Evolution Proposal` — makes proposals OKF concepts, queryable by type

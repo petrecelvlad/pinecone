@@ -16,7 +16,7 @@ agent_instructions: >
 
 # Integration Candidates
 
-A GitHub survey for frameworks worth evaluating against [PROJECT_IDENTITY.md](./PROJECT_IDENTITY.md)'s fit criteria — the same category of research that produced [Proposal 5](./Proposal_5.md) from `mattpocock/skills`. Star counts and descriptions only; no deep dive has happened yet for any of these. A lot of noise was filtered out first — single-purpose skill repos (trading, video editing, bug hunting, humor/token-reduction gimmicks) that don't compete with cone-lite's actual niche: a structured, self-describing framework for AI-agent institutional memory.
+A GitHub survey for frameworks worth evaluating against [PROJECT_IDENTITY.md](./PROJECT_IDENTITY.md)'s fit criteria — the same category of research that produced [Proposal 5](./proposals/Proposal_5.md) from `mattpocock/skills`. Star counts and descriptions only; no deep dive has happened yet for any of these. A lot of noise was filtered out first — single-purpose skill repos (trading, video editing, bug hunting, humor/token-reduction gimmicks) that don't compete with cone-lite's actual niche: a structured, self-describing framework for AI-agent institutional memory.
 
 ---
 
@@ -55,4 +55,4 @@ The four most likely to actually matter. Three of these (spec-kit, OpenSpec, BMA
 
 ## Open Question
 
-Which of these get a full fit-criteria deep dive next, and in what order? A full pass on all ten in one go is the same shape of effort as the `mattpocock/skills` research, times four or more given Tier S's scale. Decide priority, then run each chosen candidate through [PROJECT_IDENTITY.md](./PROJECT_IDENTITY.md)'s Fit Criteria the way [Proposal 5](./Proposal_5.md) did — accepted findings become a new numbered proposal, rejected ones get their reasoning recorded the same way Proposal 5's Notes section did.
+Which of these get a full fit-criteria deep dive next, and in what order? A full pass on all ten in one go is the same shape of effort as the `mattpocock/skills` research, times four or more given Tier S's scale. Decide priority, then run each chosen candidate through [PROJECT_IDENTITY.md](./PROJECT_IDENTITY.md)'s Fit Criteria the way [Proposal 5](./proposals/Proposal_5.md) did — accepted findings become a new numbered proposal, rejected ones get their reasoning recorded the same way Proposal 5's Notes section did.

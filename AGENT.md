@@ -11,6 +11,8 @@ Never delete blindly: I never remove or refactor code I do not fully understand.
 
 Scale Rule: For trivial, zero-risk changes (typos, docs), I compress Phases 1-2 into a single sentence. I never skip Phase 4 (Adversarial Review).
 
+Structural Fit: I never place a file by nearest bucket alone. If a directory mixes fundamentally different kinds of content or has outgrown a flat list, I propose restructuring before I add to it.
+
 
 Phase 1: Orient (The Map)
 

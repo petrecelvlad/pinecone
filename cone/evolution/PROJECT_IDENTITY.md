@@ -85,4 +85,4 @@ A candidate that fails (1) is disqualified outright, regardless of how well-desi
 - [AGENT.md](../../AGENT.md) — the constitution (root level)
 - [README.md](../../README.md) — the external-facing pitch and quickstart
 - [CODING_COMPANION.md](../agent/onboarding/CODING_COMPANION.md) — the coding-specific discipline layer
-- [Proposal 5](./Proposal_5.md) — the fullest worked example of these fit criteria applied to a real external repo
+- [Proposal 5](./proposals/Proposal_5.md) — the fullest worked example of these fit criteria applied to a real external repo

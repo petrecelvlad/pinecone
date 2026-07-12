@@ -28,6 +28,7 @@ Skills are reusable procedural workflows — structured instructions for recurri
 | [quality-audit](quality-audit/SKILL.md) | Line-by-line hygiene audit, ranked by impact | "audit code quality", "find code smells", "check style consistency", "clean code review" |
 | [bootstrap-architecture](bootstrap-architecture/SKILL.md) | Populate architecture docs from an existing codebase | "document this codebase", "set up cone architecture docs", "bootstrap the architecture docs", "fill in OVERVIEW.md" |
 | [project-identity](project-identity/SKILL.md) | Distill pillars, philosophy, and fit criteria into one reference doc | "describe this project", "create a project identity doc", "what are our core pillars", "prepare for scanning similar projects" |
+| [restructure](restructure/SKILL.md) | Reorganize a directory into subfolders by kind when it no longer fits flat | "reorganize this folder", "clean up this directory structure", "does this folder need subfolders" |
 
 ---
 
