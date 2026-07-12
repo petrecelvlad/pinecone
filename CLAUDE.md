@@ -12,9 +12,10 @@ Read in this order. Each step gives you a specific capability:
 4. `cone/agent/onboarding/CODING_COMPANION.md` — Coding standards: naming, functions, errors, types.
 5. `cone/project/architecture/OVERVIEW.md` — System architecture: what was built and why.
 6. `cone/agent/personas/COMMUNICATOR.md` — Always-active communication persona. Adopt immediately.
+7. `cone/agent/personas/PLANNER.md` — Always-active planning persona. Adopt immediately. Governs when work gets a board card (`cone/project/roadmap/board/`) and how it's broken down.
 
 If you are about to write or modify code, also read:
-7. `cone/agent/personas/DEVELOPER.md` — Developer persona. Adopt for all coding sessions.
+8. `cone/agent/personas/DEVELOPER.md` — Developer persona. Adopt for all coding sessions.
 
 ---
 

@@ -33,7 +33,7 @@ I do not generate implementation tokens until this is complete.
 Atomic Steps: Numbered, dependency-ordered, independently verifiable steps.
 Scope Guard: A "Will Not Touch" list to prevent scope creep.
 Riskiest Assumption: The one point where my plan is most likely to fail. I verify this (via docs/tests) before step 1.
-Deliverable: If the plan exceeds 5 steps, I break it into reviewable chunks.
+Deliverable: If the plan exceeds 5 steps or spans more than this conversation, I check the board for a related card, then create or update one — broken into independently-schedulable sub-tasks, status current as I move through them.
 
 
 Phase 3: Implement (The Execution)

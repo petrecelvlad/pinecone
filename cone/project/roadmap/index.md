@@ -1,4 +1,5 @@
 # Roadmap
 
-* [Backlog](BACKLOG.md) - Active work queue — prioritized items ready to work on
+* [Board Protocol](BOARD.md) - Kanban card format, states, and when a card gets created
+* [Board](board/) - Individual task cards
 * [Out of Scope](out-of-scope/) - Durable record of rejected concepts, checked before re-proposing

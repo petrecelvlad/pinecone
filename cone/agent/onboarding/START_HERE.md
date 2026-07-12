@@ -81,8 +81,9 @@ After Phase 2, I understand what was built and why. I can assess blast radius be
 | Step | Document | What I gain |
 |---|---|---|
 | 8 | [COMMUNICATOR.md](../personas/COMMUNICATOR.md) | Information density, response calibration (always-active) |
-| 9 | [DEVELOPER.md](../personas/DEVELOPER.md) | Coding mental model (activate if coding this session) |
-| 10 | Other personas as needed | Task-specific mental models |
+| 9 | [PLANNER.md](../personas/PLANNER.md) | Task granularity, board-card discipline, WIP hygiene (always-active) |
+| 10 | [DEVELOPER.md](../personas/DEVELOPER.md) | Coding mental model (activate if coding this session) |
+| 11 | Other personas as needed | Task-specific mental models |
 
 After Phase 3, I'm fully onboarded. I have rules, territory, and identity. I can begin work.
 
