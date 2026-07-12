@@ -2,6 +2,8 @@
 
 A universal documentation framework for AI-assisted software development. A project-agnostic template that any team or solo developer can fork, customize, and grow.
 
+**[→ Browse the framework as an interactive graph](https://petrecelvlad.github.io/pinecone/)** — every document in `cone/` as a node, every cross-link as an edge. Regenerates automatically on every push.
+
 cone-lite turns documentation from passive reference into active behavioral programming. Instead of READMEs that agents skim and forget, it provides a structured system where every document has one job, agents onboard through a dependency-ordered sequence, and institutional knowledge accumulates across conversations.
 
 ---
