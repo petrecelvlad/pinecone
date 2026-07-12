@@ -59,7 +59,7 @@ timestamp: YYYY-MM-DDT00:00:00Z
 ---
 ```
 
-**`parent`** gives task breakdown a real mechanism: an epic is a card with children pointing back to it via `parent`, created as each child actually gets prioritized — not all at once speculatively. **`blocked_by`** should also appear as a real markdown link in the card's body (not just the frontmatter ID) so the OKF visualizer picks it up as a graph edge, the same way any other cross-link does.
+**`parent`** gives task breakdown a real mechanism: an epic is a card with children pointing back to it via `parent`, created as soon as each child is actually identified and scoped — not held back until it's prioritized or started. `backlog` status exists precisely for identified-but-unordered work; withholding a card for something already real is a different mistake than inventing one for something that isn't. **`blocked_by`** should also appear as a real markdown link in the card's body (not just the frontmatter ID) so the OKF visualizer picks it up as a graph edge, the same way any other cross-link does.
 
 ---
 

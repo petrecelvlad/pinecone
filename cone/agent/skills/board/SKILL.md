@@ -34,11 +34,11 @@ The mechanical procedure behind [BOARD.md](../../../project/roadmap/BOARD.md)'s 
 
 ## Breaking Down an Epic
 
-Only create a child card when that specific piece of work is actually being prioritized — not all children at once when the epic is created. Each child:
+Create a child card as soon as its piece of work is actually identified and scoped — not gated on whether it's been prioritized or started yet. If an epic's source material (a survey, a spec, a decomposed plan) already names N real, distinct pieces of work, create all N children at `backlog` immediately; `backlog` exists precisely for identified-but-unordered work. Each child:
 - Sets `parent: T-NNN` pointing at the epic.
 - Gets linked from the epic's own Sub-Tasks section (a real markdown link, so it shows up as a graph edge in the OKF visualizer).
 
-If you catch yourself creating more than two or three child cards in one sitting for work that hasn't started, stop — that's Speculative Fragmentation. Add a line to the epic's Sub-Tasks section noting what's still pending instead.
+Only hold a child back when it genuinely isn't identified yet — a piece of work nobody has scoped, invented speculatively because breaking things down felt like progress. That's Invented Fragmentation. Holding back a card that's already fully identified because it hasn't been ordered yet is the opposite mistake, Withheld Fragmentation — see the Planner persona and `T-001`'s own Notes for the corrected example.
 
 ---
 
@@ -74,7 +74,7 @@ Once `board/` accumulates enough `done` cards that they crowd out active work wh
 
 **Don't create a card for work that fits in this response.** That's what `AGENT.md`'s Scale Rule already exempts.
 
-**Don't pre-create child cards for unprioritized work.** Wait for the second real reason, the same Rule-of-Three discipline `unify` applies to code.
+**Don't invent child cards for work that isn't identified yet.** Not the same as withholding cards for work that *is* identified but not yet ordered — that belongs at `backlog` now, not held back.
 
 **Don't maintain a separate board-view file.** It will drift from the cards' actual frontmatter the same way the old flat `BACKLOG.md` went unused. Render on demand instead.
 

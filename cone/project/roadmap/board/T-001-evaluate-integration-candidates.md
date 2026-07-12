@@ -18,20 +18,34 @@ timestamp: 2026-07-12T00:00:00Z
 
 ## Acceptance Criteria
 
-- [ ] Priority order decided across the 10 candidates (or a subset)
-- [ ] Each prioritized candidate has its own child card, created as it's actually taken up — not all 10 at once
+- [ ] Priority order decided across the 10 candidates
+- [ ] Each child card deep-dived, in whatever order gets chosen
 - [ ] Each evaluated candidate produces either a numbered Evolution Proposal (accepted findings) or a recorded rejection with reasoning (same shape as Proposal 5's Notes section)
 
 ---
 
 ## Sub-Tasks
 
-<!-- No child cards yet — status is backlog, not ready. Add one T-NNN per candidate as it's
-     actually prioritized and picked up, per the Board Protocol's Grow-Don't-Scaffold rule
-     for card creation. -->
+All 10 candidates from the survey — every one is already identified and scoped, so every one gets a card at `backlog` now. `ready` is a separate, later decision per card, not a gate on the card existing at all.
+
+**Tier S (high priority):**
+- [T-002](T-002-superpowers.md) — obra/superpowers
+- [T-003](T-003-spec-kit.md) — github/spec-kit
+- [T-004](T-004-openspec.md) — Fission-AI/OpenSpec
+- [T-005](T-005-bmad-method.md) — bmad-code-org/BMAD-METHOD
+
+**Tier A (medium priority):**
+- [T-006](T-006-claude-task-master.md) — eyaltoledano/claude-task-master
+- [T-007](T-007-planning-with-files.md) — OthmanAdi/planning-with-files
+- [T-008](T-008-agents-md.md) — agentsmd/agents.md
+
+**Tier B (low priority):**
+- [T-009](T-009-agent-os.md) — buildermethods/agent-os
+- [T-010](T-010-microsoft-skills.md) — microsoft/skills
+- [T-011](T-011-self-learning-skills.md) — Kulaxyz/self-learning-skills
 
 ---
 
 ## Notes
 
-Status is `backlog`, not `ready`: the 10 candidates haven't been prioritized against each other yet. Tier S (`obra/superpowers`, `github/spec-kit`, `Fission-AI/OpenSpec`, `bmad-code-org/BMAD-METHOD`) is the likely starting point given scale, but that's still an open decision — see INTEGRATION_CANDIDATES.md's own "Open Question" section.
+**2026-07-12 — corrected an error in the initial design.** This card originally withheld all child cards until each candidate was "prioritized," conflating two different things: hypothetical work that doesn't exist yet (correctly held back) vs. already-identified, already-scoped work that just hasn't been ordered yet (what `backlog` status exists for). All 10 candidates were already fully identified in `INTEGRATION_CANDIDATES.md` — they should have been created immediately. Fixed by creating T-002 through T-011 at `backlog`, priority mirroring tier. `PLANNER.md` and `board/SKILL.md` corrected to reflect the right distinction.
